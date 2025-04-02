@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shop Now</h1>
+        <div id="filters">
+            <input type="text" id="search" placeholder="Mahsulot qidirish...">
+            <select id="category-filter">
+                <option value="all">Barcha kategoriyalar</option>
+                <option value="stol">Stol</option>
+                <option value="yotoqxona">Yotoqxona</option>
+                <option value="divan">Divan</option>
+                <option value="stul">Stul</option>
+                <option value="tummochka">Tummochka</option>
+            </select>
+            <select id="sort-filter">
+                <option value="default">Narx bo‘yicha saralash</option>
+                <option value="cheap">Arzonidan qimmatiga</option>
+                <option value="expensive">Qimmatidan arzoniga</option>
+            </select>
+        </div>
+        <div id="product-list" class="product-container"></div>
+    </div>
+
+    <!-- Savat -->
+    <div class="cart">
+        <h2>Savat <span id="cart-count">(0)</span></h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Jami: 0 $</p>
+        <button class="button2" id="order-button">Zakaz qilish</button>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>
